@@ -1,6 +1,8 @@
+![preview](preview.png)
 # VelocityExplorer - A comprehensive analysis platform related to RNA Velocity
 
 The official website of VelocityExplorer is [https://VelocityExplorer.com](https://VelocityExplorer.com). It provides online processing functions for various processes of RNA Velocity analysis, it allowing users to customize the RNA Velocity analysis process accordingly. In addition, it also collected many RNA Velocity related datasets and provided previews of Velocity results for different processing processes of these datasets
+
 
 ## Docker
 
