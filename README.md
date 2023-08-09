@@ -4,6 +4,8 @@ The official website of VelocityExplorer is [https://VelocityExplorer.com](https
 
 ## Docker
 
+We provide a Docker image to simplify the installation and deployment process of the environment
+
 ```bash
 docker pull velocityexplorer/velocityexplorer:latest
 ```
@@ -70,5 +72,35 @@ pip install dynamo-release
 ```bash
 conda create -n DeepVelo python=3.7.5
 conda activate DeepVelo
-pip install deepvelo
+pip install deepvelo==0.2.5rc1
+```
+
+```bash
+conda create -n UnitVelo python=3.7.5
+conda activate UnitVelo
+pip install unitvelo
+```
+
+
+```bash
+conda create -n VeloAE python=3.7.5
+conda activate VeloAE
+pip install torch-scatter -f https://data.pyg.org/whl/torch-1.11.0+cu113.html
+pip install torch-sparse -f https://data.pyg.org/whl/torch-1.11.0+cu113.html
+pip install torch-geometric
+pip install git+https://github.com/qiaochen/VeloAE
+```
+
+```bash
+conda create -n cellDancer python=3.7.6
+conda activate cellDancer
+pip install celldancer
+```
+
+### Usage
+
+Download the project file, enter the project directory, and run the project using the following command.
+```bash
+conda activate velocity_explorer
+python manage.py runserver
 ```
